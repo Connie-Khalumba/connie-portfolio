@@ -26,6 +26,19 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navToggleBtn.classList.toggle("active");
   });
 }
+// Get all elements with the class name "view"
+var buttons = document.querySelectorAll('.view');
+
+// Loop through each button and add a click event listener
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Get the link associated with the button
+    var link = this.getAttribute('data-link');
+
+    // Redirect to the specified link
+    window.location.href = link;
+  });
+});
 
 
 
