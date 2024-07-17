@@ -252,9 +252,9 @@
   
   .logo {
     border-radius: 4px;
-    width: 40px;
+    width: 60px;
     padding: 2px;
-    background: #ad6903;
+    background: none;
     box-shadow: inset 8px 8px 15px #955a03,
                 inset -8px -8px 15px #c57803;
     color: white;
