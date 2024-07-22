@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 
 
@@ -39,7 +39,7 @@
     /**
      * typography
      */
-  
+     --body-font: "Quicksand", sans-serif;
     --ff-open-sans: 'Open Sans', sans-serif;
     --ff-barlow: 'Barlow', sans-serif;
     --ff-poppins: 'Poppins', sans-serif;
@@ -218,7 +218,6 @@
   
   .section-title,
   .section-text { text-align: center; }
-  
   
   
   
@@ -591,10 +590,137 @@
   }
   
   
+  /*==================== QUALIFICATION ====================*/
+
+.qualification_tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualifications_button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualifications_button:hover {
+  color: var(--first-color);
+}
+
+.qualification_icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+  color: #ad6903;
+}
+
+.qualification_data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;  /* Center the text */
+} 
+
+.qualification_subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+  text-align: center;  /* Center the text */
+}
+
+
+.qualification_calender {
+  font-size: var(--smaller-font-size);
+  color: #ad6903;
+}
+
+.qualification_rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #ad6903;;
+  border-radius: 50%;
+}
+
+.qualification_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--cadet-blue-crayola);
+  transform: translate(6px, -7px);
+}
+
+/* .qualification [data-content] {
+  display: none;
+}
+
+.qualification_active [data-content] {
+  display: block;
+} */
+
+.qualifications_button.qualification_active {
+  color: var(--first-color);
+}
+
+
+/*==================== SERVICES ====================*/
+
+.services_container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services_content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 3s;
+}
+
+.services_content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.services_icon {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+  align-items: center;
+}
+
+.services_button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.services_button :hover .button_icon {
+  transform: translateX(0.25rem);
+}
   
-  
-  
-  
+.section_title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
   
   
   
