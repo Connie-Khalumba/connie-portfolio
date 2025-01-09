@@ -449,141 +449,60 @@
     #PORTFOLIO
   \*-----------------------------------*/
   
-  .portfolio .section-title { margin-block-end: 18px; }
-  
-  .portfolio .section-text { margin-block-end: 80px; }
-  
-  .portfolio-list {
-    display: grid;
-    gap: 60px;
-  }
-  
-  .portfolio-card {
-    background-color: var(--independence);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
-    border-radius: var(--radius-20);
-    font-family: var(--ff-barlow);
-    color: var(--white);
-    font-weight: var(--fw-600);
-    transition: var(--transition-2);
-    position: relative;
-    overflow: hidden;
-  }
- 
-  .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
-  
-  .portfolio-card .card-subtitle {
-    color: #ad6903;
-    margin-block-end: 5px;
-  }
-  
-  /* solve */
-  .portfolio-list {
-    display: grid;
-    gap: 60px;
-  }
-  
-  .portfolio-card {
-    background-color: var(--independence);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
-    border-radius: var(--radius-20);
-    font-family: var(--ff-barlow);
-    color: var(--white);
-    font-weight: var(--fw-600);
-    transition: var(--transition-2);
-    position: relative;
-    overflow: hidden;
-    text-decoration: none; /* Ensure no underline on the card itself */
-  }
-  
-  .card-content {
-    position: relative;
-    z-index: 1; /* Ensure card content is above the background */
-  }
-  
-  .view-link {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: var(--white); /* Button text color */
-    background-color: var(--button-background); /* Define a color in your variables */
-    border-radius: var(--radius-10); /* Adjust border-radius if needed */
-    font-size: 16px;
-    font-weight: var(--fw-600);
-    text-align: center;
-    transition: var(--transition-2);
-    margin-top: 20px; /* Adjust spacing from content */
-  }
-  
-  .view-link:hover {
-    background-color: var(--button-hover-background); /* Define a hover color in your variables */
-  }
-  /* solve */
+  /*==================== PORTFOLIO ====================*/
+.portfolio_container{
+  overflow: initial;
+}
 
-  .portfolio-card .card-title {
-    max-width: 20ch;
-    margin-block-end: 20px;
-  }
-  
-  .portfolio-card .btn-link {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: var(--fs-6);
-    text-transform: uppercase;
-  }
-  
-  .portfolio-card .btn-link ion-icon {
-    color: #ad6903;
-    font-size: 1.6rem;
-  }
-  
-  .portfolio-card img{
-    height: 100%;
-    width: 50%;
-  }
+.portfolio_content{
+  padding: 0 1.5rem;
+}
 
-  .card-content{
-    background-color:rgba(000, 000, 000, .5);
-    border-radius: 4px;
-    padding: auto;
-  }
-  .view {
-    padding: 10px 40px;
-  border-radius: 0.3rem;
-  background-color: #e47616;;
-  color: var(--bgg-color);
-  font-weight: 500;
-  font-style: var(--cadet-blue-crayola);
-  }
-  .view:hover{
-    background-color:var(--cubic-ease-out)
-  }
-  .click {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: left;
-    text-decoration: none;
-    background-color: #ad6903;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  .click:hover {
-    background-color: var(--cubic-ease-out)
-  }
-    
-  
+.portfolio_img{
+  width: 300px;
+  border-radius: .5rem;
+  justify-content: center;
+}
+.portfolio_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
 
-  
-  
+.portfolio_description{
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon{
+  transform: rotateX('.25rem');
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-portfolio-icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev{
+  left: -.5rem;
+}
+.swiper-button-next{
+  right: -.5rem;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: -2.5rem;
+}
+.swiper-pagination-bullets-active{
+  background-color: var(--first-color);
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+  outline: none;
+}
   
   
   /*-----------------------------------*\
